@@ -2155,6 +2155,8 @@ if (! jSuites && typeof(require) === 'function') {
                             }
                         }
 
+			console.log(editor.classList)
+
                         editor.onblur = function() {
                             obj.closeEditor(cell, true);
                         };
