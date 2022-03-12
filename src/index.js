@@ -2125,6 +2125,12 @@ if (! jSuites && typeof(require) === 'function') {
                             var editor = createEditor('input');
                         }
 
+			if (obj.options.columns[x].type == 'number') {
+			    editor.type = 'tel'
+			}
+
+			console.log(editor.classList)
+
                         editor.focus();
                         editor.value = value;
 
@@ -2154,8 +2160,6 @@ if (! jSuites && typeof(require) === 'function') {
                                 jSuites.mask.render(value, opt, false);
                             }
                         }
-
-			console.log(editor.classList)
 
                         editor.onblur = function() {
                             obj.closeEditor(cell, true);
