@@ -19900,10 +19900,8 @@ if (! jSuites && typeof(require) === 'function') {
                         }
 
 			if (obj.options.columns[x].type == 'number') {
-			    editor.type = 'tel'
+			    editor.type = 'number'
 			}
-
-			console.log(editor.classList)
 
                         editor.focus();
                         editor.value = value;
