@@ -2126,7 +2126,7 @@ if (! jSuites && typeof(require) === 'function') {
                         }
 
 			if (obj.options.columns[x].type == 'number') {
-			    editor.type = 'number'
+			    editor.type = 'tel'
 			}
 
                         editor.focus();
